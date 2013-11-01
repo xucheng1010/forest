@@ -17,6 +17,7 @@ namespace forest
 			virtual void	Close() = 0;
 			virtual int	Read(char* buffer, int length) = 0;
 			virtual int	Write(const char* buffer, int length) = 0;
+			virtual void	Flush() = 0;
 			virtual bool	Valid() const = 0;
 	};
 }

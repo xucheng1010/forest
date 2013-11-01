@@ -25,6 +25,8 @@ namespace forest
 			virtual int	Read(char* buffer, int length);
 			//写入数据
 			virtual int	Write(const char* buffer, int length);
+			//冲洗缓冲区
+			virtual void	Flush();
 			//是否有效
 			virtual bool	Valid() const;
 			

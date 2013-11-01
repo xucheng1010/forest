@@ -53,6 +53,14 @@ namespace forest
 		}
 	}
 
+	void SysFile::Flush()
+	{
+		if (Valid())
+		{
+			fsync(filedes_);
+		}
+	}
+
 	void SysFile::Close()
 	{
 		Clear();
